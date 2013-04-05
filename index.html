@@ -22,6 +22,9 @@
 </head>
 
 <body class="group">
+	<a name="top"></a>
+
+<div class="page-wrap">
 
 	<header class="group">
 		<div class="block group">
@@ -30,39 +33,116 @@
 	</header>
 
 	<section class="bubbles group">
-		<a class="about-bubble bubble" href="#">
+
+		<a class="about-bubble bubble scroll-js" href="#about" title="about">
 			<h2>About</h2>
 		</a>
 
-		<a class="contact-bubble bubble" href="#">
+		<a class="contact-bubble bubble-3 bubble" href="mailto:smithschwartz@gmail.com" target="blank" title="Send an email">
 			<h2>Contact</h2>
 		</a>
 
-		<a class="work-bubble bubble" href="#">
+		<a class="work-bubble bubble-2 bubble scroll-js" href="#work" title="Work">
 			<h2>Work</h2>
 		</a>
 
-		<div class="blank-bubble bubble" href="#">
-			<h2></h2>
-		</div>
+		<div class="empty-bubble1 bubble"></div>
 
-		<div class="empty-bubble bubble" href="#">
-			<h2></h2>
-		</div>
-<!-- 
-		<div class="small-bubble bubble">
-			<h2></h2>
-		</div> -->
+		<div class="empty-bubble2 bubble"></div>
 
-		<!-- <div class="little-bubble bubble">
-			<h2></h2>
-		</div>
- -->
+		<div class="empty-bubble3 bubble"><a name="about"></a></div>
+
+		<div class="empty-bubble4 bubble"></div>
+
 	</section>
 
-	<footer class="group">
+	<section class="info group">
 
+		<a class="scroll-js up-arrow arrow group" href="#top" title="home">Up Arrow</a>
+
+		<h2>About</h2>
+
+		<p>Smith Schwartz is a digital nomad who has been circling the globe since 2011 while working as a front-end developer, writer and speaker. </p></a>
+
+		<ul>
+			<li><a href="https://github.com/smithschwartz" target="blank" title="Smith Schwartz on GitHub">GitHub</a></li>
+
+			<li><a href="https://twitter.com/smithschwartz" target="blank" title="Smith Schwartz on Twitter">Twitter</a></li>
+
+		</ul>
+		<ul>
+			<li><a href="http://www.linkedin.com/pub/smith-schwartz/33/857/685/" target="blank" title="Smith Schwartz on LinkedIn">LinkedIn</a></li>
+			
+			<li><a href="http://schwartzography.com" target="blank" title="Schwartzography.com">Blog</a></li>
+		</ul>
+
+
+		<a class="scroll-js down-arrow arrow group" href="#work" title="Work">Down Arrow</a>
+
+	</section>
+	
+	<section class="mid-bubbles group">	
+
+		<div class="empty-bubble5 bubble"></div>
+
+		<div class="empty-bubble6 bubble"></div>
+
+		<div class="empty-bubble7 bubble"><a name="work"></a></div>
+
+		<div class="empty-bubble8 bubble"></div>
+
+	</section>
+
+	<section class="work-examples">
+
+		<a class="scroll-js up-arrow arrow group" href="#top" title="home">Up Arrow</a>
+
+		<h2>Work Examples</h2>
+
+	<table>
+
+	  <tr>
+	  	<th scope="col">Client</th>
+	  	<th scope="col">Role</th>
+	  </tr>
+	  <tr>
+	    <td class="client"><a href="http://www.nimec.net" target="blank" title="NIMEC">NIMEC.net</td>
+	    <td class="role">Front-end development, design, content, UX</td>
+	  </tr>
+	  <tr>
+	    <td class="client"><a href="#" title="Vital Access">Vital Access</a></td>
+	    <td class="role">Front-end development</td>
+	  </tr>
+	  <tr>
+	    <td class="client"><a href="#" title="Stern Aegis">Stern Aegis</td>
+	    <td class="role">Front-end development</td>
+	  </tr>
+	  <tr>
+	    <td class="client"><a href="http://www.apartmenttherapy.com/authors/smith" target="blank" title="Apartment Therapy">Apartment<br> Therapy</td>
+	    <td class="role">Content</td>
+	  </tr>
+
+	 </table> 
+	
+	</section>
+</div>
+
+	<footer class="group">
+		<div class="page-wrap group">
+			<ul class="group">
+				<li><a class="scroll-js" href="#about" title="about">About</a></li>
+				<li><a class="scroll-js" href="#work" title="Work">Work</a></li>
+				<li><a href="mailto:smithschwartz@gmail.com" target="blank" title="Send an email">Contact</a></li>
+				<li class="copy">&copy; 2013 Smith Schwartz</li>
+
+			</ul>
+		</div>
 	</footer>
 
-</body>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
+	<script src="javascripts/jquery.min.scrollTo.js"></script>
+	<script src="javascripts/script.js"></script>
+
+</body>	
 </html>	
