@@ -80,9 +80,11 @@ h2 {
 }
 
 .work-examples {
-	left: -176px;
+	height: 500px;
+	left: 0;
 	position: relative;
-	top: 500px;
+	top: 2022px;
+	width: 500px;
 }
 
 .bubbles {
@@ -295,7 +297,7 @@ td {
 }
 
 .work-examples .up-arrow {
-	left: 300px;
+	left: 128px;
 	top: -60px;
 }
 
@@ -307,7 +309,7 @@ footer {
 	background: #13747D;
 	height: 140px;
 	position: relative;
-	top: 900px;
+	top: 1040px;
 	width: 100%;
 }
 
