@@ -1,0 +1,139 @@
+.page-wrap,
+.page-wrap-footer {
+	max-width: 500px;
+}
+
+footer li {
+	margin-right: 15%;
+}
+
+.block {
+	margin: auto;
+	z-index: 200;
+}
+
+.container {
+  height: 200px;
+  left: 5%;
+  width: 90%;
+}
+
+/*Circle containers*/
+
+.container-1 {
+	top: 200px;
+}
+
+.container-2 {
+	top: 450px;
+}
+
+.container-3 {
+	top: 700px;
+}
+
+.container-7 {
+	top: 1010px;
+	left: 40%;
+	z-index: 7;
+}
+
+.container-11 {
+	top: -100px;
+}
+
+.container-4, 
+.container-5,
+.container-6,
+.container-8,
+.container-9,
+.container-10 {
+	display: none;
+}
+
+.circle-7 {
+	padding: 27%;
+	width: 60%;
+}
+
+.circle-11 {
+	background: #FCF7C5;
+}
+
+/*Sections*/
+
+.info {
+	margin: auto;
+	width: 80%;
+}
+
+.work-examples {
+	left: 0;
+	top: 518px;
+	width: 90%;
+}
+
+.up-down-arrows {
+	top: 1150px;
+	left: 5%;
+	width: 90%;
+}
+
+.arrow {
+	left: 10%;
+}
+
+.down-arrow {
+	top: 285px;
+}
+
+.up-arrow {
+	top: -38px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
