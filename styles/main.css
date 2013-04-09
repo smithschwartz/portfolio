@@ -317,24 +317,9 @@ footer {
 
 /*Hovers*/
 
-a .bubble:hover {
-	margin-top: -50px;
-	box-shadow: 0 50px #fff;
-	z-index: 100;
-}
 
 a:hover {
 	color: #c8031a;
-}
-
-a .bubble:hover {
-	text-decoration: none;
-}
-
-.container-1:hover,
-.container-2:hover,
-.container-3:hover {
-	z-index: 100;
 }
 
 footer a:hover,
@@ -437,7 +422,7 @@ footer li {
 
 footer ul {
 	margin: auto;
-	width: 209px;
+	width: 300px;
 }
 
 .copy {
@@ -454,6 +439,26 @@ footer a {
 
 .end {
 	margin-right: 0;
+}
+
+@media only screen 
+and (min-width : 501px) {
+
+	a .bubble:hover {
+		margin-top: -50px;
+		box-shadow: 0 50px #fff;
+		z-index: 100;
+	}
+
+	a .bubble:hover {
+		text-decoration: none;
+	}
+
+	.container-1:hover,
+	.container-2:hover,
+	.container-3:hover {
+		z-index: 100;
+	}
 }
 
 

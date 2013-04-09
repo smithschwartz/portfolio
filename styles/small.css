@@ -7,6 +7,14 @@ footer li {
 	margin-right: 15%;
 }
 
+footer {
+	top: 220px;
+}
+
+footer ul {
+	width: 209px;
+}
+
 .block {
 	margin: auto;
 	z-index: 200;
@@ -14,115 +22,147 @@ footer li {
 
 .container {
   height: 200px;
-  left: 5%;
-  width: 90%;
+  width: 50%;
+}
+
+.container-8,
+.container-7,
+.container-4 {
+	width: 40%;
+}
+
+.bubble {
+	padding-bottom: 36.5%;
+}
+
+.bubble h2 {
+	font-size: 22px;
+	padding-top: 38%;
+}
+
+.bubble:hover {
+	margin-top: 0px;
 }
 
 /*Circle containers*/
 
 .container-1 {
-	top: 200px;
+	left: 8%;
+	top: 188px;
 }
 
 .container-2 {
-	top: 450px;
+	left: 32%;
+	top: 290px;
 }
 
 .container-3 {
-	top: 700px;
+	left: 17%;
+	top: 410px;
+}
+
+.container-4 {
+	left: 57%;
+	top: 390px;
 }
 
 .container-7 {
-	top: 1010px;
-	left: 40%;
+	top: 533px;
+	left: 8%;
 	z-index: 7;
 }
 
-.container-11 {
-	top: -100px;
+.container-8 {
+	left: 8%;
+	top: -225px;
 }
-
-.container-4, 
+.container-9 {
+	left: 25%;
+	top: -155px;
+}
+.container-10 {
+	left: 8%;
+	top: -48px;
+}
+ 
 .container-5,
 .container-6,
-.container-8,
-.container-9,
-.container-10 {
+.container-11 {
 	display: none;
 }
 
 .circle-7 {
-	padding: 27%;
-	width: 60%;
+	background: url("../images/smith.png") center center no-repeat;
 }
 
-.circle-11 {
-	background: #FCF7C5;
+.circle-8,
+.circle-9,
+.circle-10,
+.circle-4,
+.circle-7 {
+	padding-bottom: 87%;
 }
+
 
 /*Sections*/
 
 .info {
 	margin: auto;
+	text-align: right;
 	width: 80%;
 }
 
 .work-examples {
-	left: 0;
-	top: 518px;
-	width: 90%;
+	left: 10%;
+	height: 80%;
+	top: 165px;
+	width: 80%;
 }
 
 .up-down-arrows {
-	top: 1150px;
+	top: 632px;
 	left: 5%;
+	height: 60%;
+	text-align: right;
 	width: 90%;
 }
 
+.mid-bubbles {
+	height: 5%;
+	top: -490px;
+}
+
+.info ul {
+	float: right;
+	margin-left: 30px;
+	margin-right: 0;
+
+}
+table {
+	width: 110%;
+}
+
+/*Arrows*/
+
 .arrow {
-	left: 10%;
+	left: 70%;
 }
 
 .down-arrow {
-	top: 285px;
+	top: 280px;
 }
 
 .up-arrow {
 	top: -38px;
 }
+.work-examples .up-arrow {
+	top: -60px;
+	left: 70%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+a h2:hover {
+	color: #ccc;
+}
 
 
 
