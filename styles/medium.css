@@ -1,0 +1,9 @@
+
+.page-wrap {
+	min-width: 500px;
+	max-width: 9000px;
+}
+
+body {
+	background: pink;
+}
