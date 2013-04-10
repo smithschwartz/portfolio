@@ -77,7 +77,7 @@ footer {
 	padding-top: 30px;
 	margin: 0;
 	width: 255px;
-	z-index: 100;
+	z-index: 400;
 }
 
 .up-down-arrows {
@@ -91,7 +91,7 @@ footer {
 
 .info {
 	position: relative;
-	height:200px;
+	height: 200px;
 	width: 399px;
 }
 
@@ -442,7 +442,7 @@ footer a {
 }
 
 @media only screen 
-and (min-width : 501px) {
+and (min-width : 610px) {
 
 	a .bubble:hover {
 		margin-top: -50px;
@@ -461,6 +461,14 @@ and (min-width : 501px) {
 	}
 }
 
+@media only screen 
+and (min-device-width : 420px) 
+and (max-device-width : 798px) {
+	body {
+		background: ;
+	}
+/* Styles */
+}
 
 
 

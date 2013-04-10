@@ -1,9 +1,46 @@
 
 .page-wrap {
 	min-width: 500px;
-	max-width: 9000px;
+	max-width: 900px;
 }
 
 body {
 	background: pink;
 }
+
+.work-examples,
+.up-down-arrows,
+.block {
+	margin-left: 5%;
+}
+
+.up-down-arrows {
+	left: 45%;
+	width: 50%;
+}
+
+.bubbles {
+	top: -100px;
+}
+
+.container-4 {
+	top: 598px;
+}
+
+.container-5 {
+	top: 781px
+}
+
+.container-6 {
+	top: 941px;
+}
+
+.container-7 {
+	left: 12.5%;
+	top: 1204px;
+}
+
+.container-11 {
+	left: 35%;
+}
+
