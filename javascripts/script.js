@@ -5,7 +5,7 @@ $(document).ready(function(event){
    		// Find target
    		$anchor = $("a[name='" + anchor + "']");
    		
-   		$.scrollTo($anchor, 1000, {offset:-80, 'axis':'y', onAfter: function() {
+   		$.scrollTo($anchor, 1000, {offset:-60, 'axis':'y', onAfter: function() {
    			// update url
    			if (history.pushState) {
                 history.pushState(null, null, "#" + anchor);

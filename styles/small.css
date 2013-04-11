@@ -5,6 +5,10 @@
 	max-width: 500px;
 	padding: 0;
 }
+
+.page-wrap {
+	padding: 0;
+}
 .page-wrap {
 	height: 1300px;
 }
