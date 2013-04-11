@@ -1,9 +1,7 @@
 
 .page-wrap,
 .page-wrap-footer {
-	min-width: 400px;
 	max-width: 500px;
-	padding: 0;
 }
 
 .page-wrap {
@@ -140,7 +138,11 @@ footer ul {
 	text-align: right;
 	width: 90%;
 }
-
+/*
+.bubbles {
+	width: 90%;
+}
+*/
 .mid-bubbles {
 	height: 40%;
 	top: -390px;
