@@ -1,6 +1,7 @@
 
 .page-wrap,
 .page-wrap-footer {
+	padding: 0;
 	max-width: 550px;
 	min-width: 400px;
 }
@@ -10,7 +11,7 @@ footer li {
 }
 
 footer {
-	top: 250px;
+	top: 375px;
 }
 
 footer ul {
@@ -140,7 +141,7 @@ footer ul {
 
 .mid-bubbles {
 	height: 5%;
-	top: -470px;
+	top: -410px;
 	width: 90%;
 }
 section {

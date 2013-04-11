@@ -2,10 +2,7 @@
 .page-wrap {
 	min-width: 500px;
 	max-width: 900px;
-}
-
-body {
-	background: pink;
+	padding: 0;
 }
 
 .work-examples,
@@ -16,6 +13,7 @@ body {
 
 .up-down-arrows {
 	left: 45%;
+	top: 1248px;
 	width: 50%;
 }
 
@@ -23,12 +21,15 @@ body {
 	top: -100px;
 }
 
+.container-3 {
+	top: 544px;
+}
 .container-4 {
-	top: 598px;
+	top: 584px;
 }
 
 .container-5 {
-	top: 781px
+	top: 759px
 }
 
 .container-6 {
@@ -40,7 +41,44 @@ body {
 	top: 1204px;
 }
 
-.container-11 {
-	left: 35%;
+.container-8 {
+	left: 76%;
+	top: 107px;
+
 }
+
+.container-9 {
+	left: 58.3%;
+	top: ;
+}
+
+.container-10 {
+	left: 65%;
+	top: 476px;
+}
+
+.container-11 {
+	left: 47%;
+	top: 690px;
+}
+
+.bubble {
+	padding-bottom: 94.5%;
+}
+.circle-1, 
+.circle-2,
+.circle-3 {
+	padding-bottom: 39%;
+}
+
+.circle-8, 
+.circle-7, 
+.circle-4 {
+	padding-bottom: 93.5%;
+}
+
+.mid-bubbles {
+	width: 90%;
+}
+
 

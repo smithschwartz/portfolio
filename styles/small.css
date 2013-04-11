@@ -1,7 +1,12 @@
 
 .page-wrap,
 .page-wrap-footer {
+	min-width: 400px;
 	max-width: 500px;
+	padding: 0;
+}
+.page-wrap {
+	height: 1300px;
 }
 
 footer li {
@@ -9,7 +14,7 @@ footer li {
 }
 
 footer {
-	top: 320px;
+	top: 400px;
 }
 
 footer ul {
@@ -113,7 +118,7 @@ footer ul {
 	margin: auto;
 	max-width: 300px;
 	text-align: right;
-	top: 50px;
+	top: 0;
 	width: 80%;
 }
 
@@ -133,7 +138,7 @@ footer ul {
 }
 
 .mid-bubbles {
-	height: 5%;
+	height: 40%;
 	top: -390px;
 }
 
@@ -154,11 +159,11 @@ table {
 }
 
 .down-arrow {
-	top: 299px;
+	top: 269px;
 }
 
 .up-arrow {
-	top: 23px;
+	top: -43px;
 }
 .work-examples .up-arrow {
 	top: -40px;

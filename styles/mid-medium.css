@@ -1,9 +1,9 @@
 
-
 .page-wrap-footer,
 .page-wrap {
 	min-width: 400px;
 	max-width: 700px;
+	padding: 0;
 }
 
 footer {
@@ -56,16 +56,18 @@ footer {
 }
 
 .container-8 {
-	top: 100px;
+	left: 75%;
+	top: 121px;
 }
 
 .container-9 {
+	left: 55%;
 	top: 220px;
 }
 
 .container-10 {
-	left: 55%;
-	top: 360px;
+	left: 62%;
+	top: 369px;
 	z-index: 6;
 }
 

@@ -60,7 +60,8 @@ footer {
 .page-wrap {
 	margin: auto;
 	max-width: 1000px;
-	height: 1370px;
+	height: 1300px;
+	padding: 20px;
 	position: relative;
 }
 
@@ -92,12 +93,12 @@ footer {
 .info {
 	position: relative;
 	height: 200px;
-	width: 399px;
+	width: 100%;
 }
 
 .work-examples {
 	height: 500px;
-	left: 0;
+	left: 5%;
 	position: relative;
 	top: 518px;
 	width: 450px;
@@ -111,10 +112,11 @@ footer {
 }
 
 .mid-bubbles {
+	margin-right: 0;
 	position: relative;
 	top: 0px;
 	height: 85%;
-	width: 100%;
+	width: 90%;
 }
 
 /*Circles*/
