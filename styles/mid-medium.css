@@ -17,10 +17,15 @@ footer {
 }
 
 .up-down-arrows {
-	left: 32%;
-	top: 1000px;
+	left: 45%;
+	top: 950px;
 	width: 40%;
 }
+
+.down-arrow {
+	top: 280px;
+}
+
 
 .bubbles {
 	top: -100px;
@@ -109,5 +114,9 @@ footer {
 	top: -300px;
 }
 
+a .bubble:hover {
+	margin-top: -30px;
+	box-shadow: 0 30px #fff;
+}
 
 

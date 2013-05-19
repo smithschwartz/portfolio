@@ -189,7 +189,10 @@ a h2:hover {
 }
 
 
-
+a .bubble:hover {
+	margin-top: 0;
+	box-shadow: none;
+}
 
 
 

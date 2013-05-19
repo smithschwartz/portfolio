@@ -49,8 +49,9 @@ footer ul {
 	padding-top: 38%;
 }
 
-.bubble:hover {
+a .bubble:hover {
 	margin-top: 0px;
+	box-shadow: none;
 }
 
 /*Circle containers*/
@@ -180,16 +181,6 @@ table {
 a h2:hover {
 	color: #ccc;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

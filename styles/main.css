@@ -81,15 +81,6 @@ footer {
 	z-index: 400;
 }
 
-.up-down-arrows {
-	height: 400px;
-	position: absolute;
-	top: 1260px;
-	left: 60%;
-	width: 40%;
-}
-
-
 .info {
 	position: relative;
 	height: 200px;
@@ -335,6 +326,22 @@ footer a:hover {
 	text-decoration: underline;
 }
 
+a .bubble:hover {
+	margin-top: -30px;
+	box-shadow: 0 50px #fff;
+	z-index: 100;
+}
+
+a .bubble:hover {
+	text-decoration: none;
+}
+
+.container-1:hover,
+.container-2:hover,
+.container-3:hover {
+	z-index: 100;
+}
+
 
 /*Lists*/
 
@@ -380,6 +387,15 @@ td {
 
 /*Arrows*/
 
+
+.up-down-arrows {
+	height: 400px;
+	position: absolute;
+	top: 1260px;
+	left: 60%;
+	width: 40%;
+}
+
 .arrow{
 	display: block;
 	font: 0/0 a;
@@ -392,6 +408,7 @@ td {
 .down-arrow {
 	background: url("../images/down-arrow.png") center center no-repeat;
 	top: 247px;
+	z-index: 100;
 }
 
 .up-arrow {
@@ -402,6 +419,10 @@ td {
 .work-examples .up-arrow {
 	top: -60px;
 	left: 155px;
+}
+
+.soon {
+	font-size: 150%;
 }
 
 /*Footer*/
@@ -443,11 +464,11 @@ footer a {
 	margin-right: 0;
 }
 
-@media only screen 
-and (min-width : 610px) {
+
+/*@media screen and (min-width: 610px) {
 
 	a .bubble:hover {
-		margin-top: -50px;
+		margin-top: -30px;
 		box-shadow: 0 50px #fff;
 		z-index: 100;
 	}
@@ -461,16 +482,8 @@ and (min-width : 610px) {
 	.container-3:hover {
 		z-index: 100;
 	}
-}
 
-@media only screen 
-and (min-device-width : 420px) 
-and (max-device-width : 798px) {
-	body {
-		background: ;
-	}
-/* Styles */
-}
+}*/
 
 
 
