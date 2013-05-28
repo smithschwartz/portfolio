@@ -399,6 +399,7 @@ td {
 a.arrow,
 .arrow{
 	display: block;
+	color: transparent;
 	font: 0/0 a;
 	height: 15px;
 	left: 188px;
