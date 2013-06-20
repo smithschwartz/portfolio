@@ -1,0 +1,205 @@
+
+.page-wrap,
+.page-wrap-footer {
+	padding: 0;
+	max-width: 550px;
+	min-width: 400px;
+}
+
+footer li {
+	margin-right: 15%;
+}
+
+footer {
+	top: 375px;
+}
+
+footer ul {
+	width: 209px;
+}
+
+.block {
+	padding-top: 10px;
+	padding-left: 5%;
+	z-index: 200;
+}
+
+.container {
+  height: 200px;
+  width: 40%;
+}
+
+.container-8,
+.container-7,
+.container-4 {
+	width: 30%;
+}
+
+.bubble {
+	padding-bottom: 37.5%;
+}
+
+.bubble h2 {
+	font-size: 26px;
+	padding-top: 39%;
+}
+
+.bubble:hover {
+	margin-top: 0px;
+}
+
+/*Circle containers*/
+
+.container-1 {
+	left: 31%;
+	top: 188px;
+}
+
+.container-2 {
+	left: 49%;
+	top: 309px;
+}
+
+.container-3 {
+	left: 27%;
+	top: 423px;
+}
+
+.container-4 {
+	left: 61%;
+	top: 439px;
+}
+
+.container-5 {
+	left: 19%;
+	top: 556px;
+}
+
+.container-7 {
+	left: 7%;
+	top: 643px;
+	z-index: 7;
+}
+
+.container-8 {
+	left: 9%;
+	top: -214px;;
+}
+.container-9 {
+	left: 25%;
+	top: -155px;
+}
+.container-10 {
+	left: 8%;
+	top: -60px;
+}
+ 
+.container-6,
+.container-11 {
+	display: none;
+}
+
+.circle-7 {
+	background: white url("../images/smith.png") center center no-repeat;
+}
+
+.circle-5,
+.circle-8,
+.circle-9,
+.circle-10,
+.circle-4,
+.circle-7 {
+	padding-bottom: 90%;
+}
+
+
+/*Sections*/
+
+.info {
+	margin: auto;
+	max-width: 300px;
+	text-align: right;
+	top: 100px;
+	width: 100%;
+}
+
+.work-examples {
+	left: 8%;
+	height: 400px;
+	margin-right: 0;
+	top: 220px;
+	width: 80%;
+}
+
+.up-down-arrows {
+	top: 650px;
+	left: 23%;
+	height: 60%;
+	text-align: right;
+	width: 77%;
+}
+
+.mid-bubbles {
+	height: 5%;
+	top: -410px;
+	width: 90%;
+}
+section {
+	margin-right: 0;
+}
+
+.info ul {
+	float: right;
+	margin-left: 30px;
+	margin-right: 0;
+
+}
+
+table {
+	width: 110%;
+}
+
+/*Arrows*/
+
+.arrow {
+	left: 70%;
+}
+
+.down-arrow {
+	top: 357px;
+}
+
+.up-arrow {
+	top: 64px;
+}
+.work-examples .up-arrow {
+	top: -40px;
+	left: 30%;
+	z-index: 400;
+}
+
+a h2:hover {
+	color: #ccc;
+}
+
+.circle-8,
+.circle-7,
+.circle-4 {
+	padding-bottom: 87%;
+}
+
+
+a .bubble:hover {
+	margin-top: 0;
+	box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
