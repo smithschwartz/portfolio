@@ -124,7 +124,7 @@ footer ul {
 }
 
 .work-examples {
-	left: 8%;
+	left: 15%;
 	height: 400px;
 	margin-right: 0;
 	top: 220px;
@@ -141,7 +141,8 @@ footer ul {
 
 .mid-bubbles {
 	height: 5%;
-	top: -410px;
+	left:-30px;
+	top: -370px;
 	width: 90%;
 }
 section {

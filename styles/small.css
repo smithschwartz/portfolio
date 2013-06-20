@@ -126,7 +126,7 @@ a .bubble:hover {
 }
 
 .work-examples {
-	left: 10%;
+	left: 15%;
 	height: 80%;
 	top: 200px;
 	width: 90%;
@@ -139,13 +139,10 @@ a .bubble:hover {
 	text-align: right;
 	width: 90%;
 }
-/*
-.bubbles {
-	width: 90%;
-}
-*/
+
 .mid-bubbles {
 	height: 40%;
+	left: -30px;
 	top: -390px;
 }
 

@@ -382,7 +382,7 @@ td {
 }
 
 .role {
-	width: 380px;
+	width: 270px;
 }
 
 /*Arrows*/
@@ -464,6 +464,23 @@ footer a {
 
 .end {
 	margin-right: 0;
+}
+
+/*Design Project Page*/
+
+.design-example-wrap {
+	margin: 30px auto 0 auto;
+	width: 1200px;
+}
+
+.design-example-wrap h1 {
+	margin-bottom: 20px;
+}
+
+.design-example {
+	display: block;
+	margin-right: 5%;
+	float: left;
 }
 
 
