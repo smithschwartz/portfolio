@@ -1,3 +1,4 @@
+@import "normalize.scss";
 
 /*Clearfix, Resets*/
 
@@ -182,7 +183,7 @@ footer {
 }
 
 .circle-7 {
-	background: #13747D url("../images/smith.png") center center no-repeat;
+	background: #13747D url("../../images/smith.png") center center no-repeat;
 }
 
 /*Circle text*/
@@ -408,13 +409,13 @@ a.arrow,
 }
 
 .down-arrow {
-	background: url("../images/down-arrow.png") center center no-repeat;
+	background: url("../../images/down-arrow.png") center center no-repeat;
 	top: 247px;
 	z-index: 100;
 }
 
 .up-arrow {
-	background: url("../images/up-arrow.png") center center no-repeat;
+	background: url("../../images/up-arrow.png") center center no-repeat;
 	top: -42px;
 }
 
