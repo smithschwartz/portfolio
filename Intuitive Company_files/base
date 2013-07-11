@@ -1,0 +1,284 @@
+$(document).ready(function () {
+
+    // slides
+    $(".slides").each(function () {
+        var parent = $(this),
+            pane = $(".slides-nav-i", this),
+            slidesNavigation = $(".slides-nav LI", this),
+            numberOfSlides = slidesNavigation.length,
+            slides = $(".slide", this),
+            slidesClose = $(".slides-close", this),
+            slidesNext = $(".slides-next", this),
+            slidesPrev = $(".slides-prev", this);
+
+        if ($("body").hasClass("body-article")) {
+            $("body").addClass("body-slide");
+            return false;
+        }
+
+        slidesNavigation.width(parent.width() / numberOfSlides);
+
+        $(window).bind("resize", function () {
+            slidesNavigation.width(parent.width() / numberOfSlides);
+
+            if ($("body").hasClass("body-slide")) {
+                var cur = slidesNavigation.filter(".cur"),
+                    pos = cur.prevAll().length,
+                    shift = parent.width() / 2 - 360 - (pos) * 200;
+
+                pane.css({"left":shift});
+            }
+        });
+
+        slidesNavigation.click(function () {
+            var pos = $(this).prevAll().length;
+            showSlide(pos);
+        });
+
+        slidesClose.click(function () {closeSlides();});
+
+        slidesNext.click(function () {
+            if (!$(this).hasClass("disabled")) {
+                showSlide(slidesNavigation.filter(".cur").prevAll().length + 1)
+            }
+        });
+
+        slidesPrev.click(function () {
+            if (!$(this).hasClass("disabled")) {
+                showSlide(slidesNavigation.filter(".cur").prevAll().length - 1)
+            }
+        });
+
+        function showSlide(n) {
+            $("body").addClass("body-slide");
+
+            var isSlideAlreadyOpened = parent.hasClass("slides-open");
+
+            parent.addClass("slides-open");
+            slidesNavigation.eq(n).addClass("cur").siblings(".cur").removeClass("cur");
+            slides.eq(n).addClass("cur").siblings(".cur").removeClass("cur");
+
+            if (!isSlideAlreadyOpened) {
+                $(".slides-close").stop(true).hide();
+
+                slides.eq(n).css({
+                    width:0,
+                    opacity:0
+                }).animate({
+                        width:720,
+                        opacity:1
+                    }, 600, "swing", function () {
+                        $(".slides-close").css({
+                            "display":"block",
+                            "margin-left":200
+                        }).animate({"margin-left":360}, 600, "swing");
+                    });
+            }
+
+            var shift = parent.width() / 2 - 360 - n * 200;
+            pane.css({"left":shift});
+
+            $(window).scrollTo(0, $("body").width() < 480 ? 0 : 300);
+
+
+            // Update the previous button for slides based off currently selected slide
+            n == 0 ? slidesPrev.addClass("disabled") : slidesPrev.removeClass("disabled");
+
+            // Update the next button for slides based off currently selected slide
+            n == numberOfSlides - 1 ? slidesNext.addClass("disabled") : slidesNext.removeClass("disabled");
+
+            // Add a state change when the slide changes
+            $.bbq.pushState({slide:slides[n].id});
+        }
+
+        function closeSlides() {
+            $("body").removeClass("body-slide");
+            $(".slides-close").hide();
+            parent.removeClass("slides-open");
+            slidesNavigation.removeClass("cur");
+            pane.css({"left":0});
+
+            $.bbq.removeState();
+        }
+
+        $(".slide-next a", slides).click(function () {
+            slidesNext.click();
+            return false;
+        });
+
+        // Hash handling to allow us to use the back button to navigate back through the About side.
+        $(window).bind('hashchange', function (e) {
+            var goToSlide = e.getState("slide", true);
+
+            if (goToSlide) {
+                for (var i = 0; i < slides.length; i++) {
+                    if (slides[i].id == goToSlide) {
+                        showSlide(i);
+                        break;
+                    }
+                }
+
+                if (goToSlide === "team") {
+                    var person = e.getState( "p" );
+
+                    if (person) {
+                        showTeamMember( person );
+                    }
+                    else {resetAndShowEntireTeam();}
+                }
+                else if (goToSlide === "stuff") {
+
+                    var section = e.getState( "s" );
+
+                    if (section) {
+                        showSection( section );
+                    }
+                    else {$(".sections-back").click();}
+                }
+            }
+            else {closeSlides();}
+        });
+
+        // Code to manage team section
+        // ------------------------------------------------------------------------------------
+        var team = $(".team"),
+            teamMembers = $("LI", team),
+            teamBack = $(".team-back", team),
+            teamPrevious = $(".team-larr", team),
+            teamNext = $(".team-rarr", team);
+
+        function showTeamMember( name ) {
+            team.addClass("team-open");
+            teamMembers.removeClass( "cur" );
+            $("#" + name ).addClass("cur");
+
+            $.bbq.pushState( {p: name } );
+        }		
+
+        function resetAndShowEntireTeam() {
+            teamMembers.removeClass("cur");
+            team.removeClass("team-open");
+            $.bbq.removeState( "p" );
+        }
+
+        function showNextTeamMember() {
+            var cur = teamMembers.filter(".cur"),
+                next = cur.nextAll().length ? cur.next() : teamMembers.first();
+            next.addClass("cur").siblings().removeClass("cur");
+
+            $.bbq.pushState( {p: next[0].id } );
+        }
+
+        function showPreviousTeamMember() {
+            var currentTeamMember = teamMembers.filter(".cur"),
+                next = currentTeamMember.prevAll().length ? currentTeamMember.prev() : teamMembers.last();
+
+            next.addClass("cur").siblings().removeClass("cur");
+
+            $.bbq.pushState( {p: next[0].id } );
+        }
+
+        teamMembers.click( function() {
+            showTeamMember( this.id );
+        } );
+
+        teamBack.click( resetAndShowEntireTeam );
+        teamNext.click( showNextTeamMember );
+        teamPrevious.click( showPreviousTeamMember );
+
+
+        // Code to Stuff Sections
+        // ------------------------------------------------------------------------------------	
+        var sections = $(".sections-wrap"),
+            sectionItems = $(".sections LI", sections),
+            sectionsBack = $(".sections-back", sections),
+            sectionsPrevious = $(".sections-larr", sections),
+            sectionsNext = $(".sections-rarr", sections);
+
+        sectionItems.click(function () {
+            if (!$(this).hasClass("cur")) {
+                sections.addClass("sections-wrap-open");
+                $(this).addClass("cur");
+                $.bbq.pushState( {s: this.id } );
+            }
+
+            window.scrollTo(0, $("div.sections-wrap.sections-wrap-open").offset().top);
+        });
+
+        sectionsBack.click(function () {
+            sectionItems.removeClass("cur");
+            sections.removeClass("sections-wrap-open");
+
+            $.bbq.removeState( "s" );
+        });
+
+        // Scroll to the top of a section if clicking next via arrows.
+        function scrollToTop(target) {
+            if ($(target).parents(".sections-nav-down").length > 0) {
+                window.scrollTo(0, $("div.sections-wrap.sections-wrap-open").offset().top);
+            }
+        }
+
+        function showSection( section ) {
+            sectionItems.removeClass("cur");
+            $( "#" + section).click();
+        }
+
+        sectionsNext.click(function () {
+            var cur, next;
+            sectionItems.each(function (index) {
+                if ($(this).hasClass("cur")) {
+                    cur = index;
+                }
+            });
+            next = sectionItems.eq(cur != sectionItems.length - 1 ? cur + 1 : 0);
+            sectionItems.removeClass("cur");
+            next.addClass("cur");
+
+            $.bbq.pushState( {s: next[0].id } );
+
+            scrollToTop(this);
+        });
+
+        sectionsPrevious.click(function () {
+            var cur,
+                next;
+            sectionItems.each(function (index) {
+                if ($(this).hasClass("cur")) {
+                    cur = index;
+                }
+            });
+            next = sectionItems.eq(cur != 0 ? cur - 1 : sectionItems.length - 1);
+            sectionItems.removeClass("cur");
+            next.addClass("cur");
+
+            $.bbq.pushState( {s: next[0].id } );
+
+            scrollToTop(this);
+        });
+    });
+
+
+    // Code to enable keyboard navigation through the slides
+    $(document).keydown(function (event) {
+        var isSlideAlreadyOpened = $(".slides").hasClass("slides-open");
+
+        if (isSlideAlreadyOpened) {
+            switch (event.keyCode) {
+                case 27:
+                    $(".slides-close").click();
+                    break;
+                case 37:
+                    $(".slides-nav .slides-prev").click();
+                    break;
+                case 39:
+                    $(".slides-nav .slides-next").click();
+                    break;
+            }
+        }
+    });
+
+
+    // Trigger the hashchange handler the initial time the document loads.
+    $(window).trigger('hashchange');
+});
