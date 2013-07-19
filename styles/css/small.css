@@ -1,0 +1,144 @@
+.page-wrap,
+.page-wrap-footer {
+  max-width: 500px; }
+
+.page-wrap {
+  padding: 0; }
+
+.page-wrap {
+  height: 1300px; }
+
+footer li {
+  margin-right: 15%; }
+
+footer {
+  top: 500px; }
+
+footer ul {
+  width: 209px; }
+
+.block {
+  padding-top: 10px;
+  margin: auto;
+  z-index: 200; }
+
+.container {
+  height: 200px;
+  width: 50%; }
+
+.container-8,
+.container-7,
+.container-4 {
+  width: 40%; }
+
+.bubble {
+  padding-bottom: 36.5%; }
+
+.bubble h2 {
+  font-size: 22px;
+  padding-top: 38%; }
+
+a .bubble:hover {
+  margin-top: 0px;
+  box-shadow: none; }
+
+/*Circle containers*/
+.container-1 {
+  left: 8%;
+  top: 188px; }
+
+.container-2 {
+  left: 32%;
+  top: 290px; }
+
+.container-3 {
+  left: 17%;
+  top: 410px; }
+
+.container-4 {
+  left: 57%;
+  top: 419px; }
+
+.container-7 {
+  top: 533px;
+  left: 8%;
+  z-index: 7; }
+
+.container-8 {
+  left: 9%;
+  top: -225px; }
+
+.container-9 {
+  left: 25%;
+  top: -155px; }
+
+.container-10 {
+  left: 8%;
+  top: -60px; }
+
+.container-5,
+.container-6,
+.container-11 {
+  display: none; }
+
+.circle-7 {
+  background: url("../../images/smith.png") center center no-repeat; }
+
+.circle-8,
+.circle-9,
+.circle-10,
+.circle-4,
+.circle-7 {
+  padding-bottom: 87%; }
+
+/*Sections*/
+.info {
+  margin: auto;
+  max-width: 300px;
+  text-align: right;
+  top: 0;
+  width: 80%; }
+
+.work-examples {
+  left: 15%;
+  height: 80%;
+  top: 200px;
+  width: 90%; }
+
+.up-down-arrows {
+  top: 650px;
+  left: 5%;
+  height: 60%;
+  text-align: right;
+  width: 90%; }
+
+.mid-bubbles {
+  height: 40%;
+  left: -30px;
+  top: -390px; }
+
+.info ul {
+  float: right;
+  margin-left: 30px;
+  margin-right: 0; }
+
+table {
+  width: 110%; }
+
+/*Arrows*/
+.arrow {
+  left: 70%; }
+
+.down-arrow {
+  top: 269px; }
+
+.up-arrow {
+  top: -43px; }
+
+.work-examples .up-arrow {
+  top: -40px;
+  left: 30%;
+  z-index: 400; }
+
+a h2:hover {
+  color: #ccc; }
