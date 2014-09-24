@@ -142,3 +142,7 @@ table {
 
 a h2:hover {
   color: #ccc; }
+
+.intro {
+  width: 295px;
+}
