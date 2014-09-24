@@ -688,7 +688,7 @@ footer {
   background: #13747D;
   height: 140px;
   position: relative;
-  top: 1345px;
+  top: 1500px;
   width: 100%; }
 
 footer li {
@@ -713,6 +713,12 @@ footer a {
 .end {
   margin-right: 0; }
 
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
 /*Design Project Page*/
 .design-example-wrap {
   margin: 30px auto 0 auto;
@@ -725,3 +731,15 @@ footer a {
   display: block;
   margin-right: 5%;
   float: left; }
+
+.intro {
+  width: 355px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+ul {
+  margin-bottom: 20px;
+}
