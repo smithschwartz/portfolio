@@ -1,3 +1,4 @@
+@import "normalize.scss";
 
 /*Clearfix, Resets*/
 
@@ -8,9 +9,9 @@
 }
 
 /* apply a natural box layout model to all elements */
-* { -moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box; 
+* { -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*Fonts*/
@@ -25,7 +26,7 @@ a {
 	text-decoration: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	text-transform: uppercase;
 	text-shadow: inset 1px 1px 1px #ccc;
 }
@@ -63,6 +64,10 @@ footer {
 	height: 1300px;
 	padding: 20px;
 	position: relative;
+}
+
+.page-wrap.link-page {
+	padding: 40px;
 }
 
 .page-wrap-footer {
@@ -182,7 +187,7 @@ footer {
 }
 
 .circle-7 {
-	background: #13747D url("../images/smith.png") center center no-repeat;
+	background: #13747D url("../../images/smith.png") center center no-repeat;
 }
 
 /*Circle text*/
@@ -303,8 +308,8 @@ footer {
 }
 
 .container-11 {
-	left: 33%;
-	top: 720px;
+	left: 73%;
+	top: 686px;
 	z-index: 2;
 }
 
@@ -408,13 +413,13 @@ a.arrow,
 }
 
 .down-arrow {
-	background: url("../images/down-arrow.png") center center no-repeat;
+	background: url("../../images/down-arrow.png") center center no-repeat;
 	top: 247px;
 	z-index: 100;
 }
 
 .up-arrow {
-	background: url("../images/up-arrow.png") center center no-repeat;
+	background: url("../../images/up-arrow.png") center center no-repeat;
 	top: -42px;
 }
 
@@ -482,7 +487,6 @@ footer a {
 	margin-right: 5%;
 	float: left;
 }
-
 
 
 

@@ -1,14 +1,9 @@
 
 .page-wrap,
 .page-wrap-footer {
-	max-width: 500px;
-}
-
-.page-wrap {
 	padding: 0;
-}
-.page-wrap {
-	height: 1300px;
+	max-width: 550px;
+	min-width: 400px;
 }
 
 footer li {
@@ -16,7 +11,7 @@ footer li {
 }
 
 footer {
-	top: 400px;
+	top: 525px;
 }
 
 footer ul {
@@ -25,67 +20,70 @@ footer ul {
 
 .block {
 	padding-top: 10px;
-	margin: auto;
+	padding-left: 5%;
 	z-index: 200;
 }
 
 .container {
   height: 200px;
-  width: 50%;
+  width: 40%;
 }
 
 .container-8,
 .container-7,
 .container-4 {
-	width: 40%;
+	width: 30%;
 }
 
 .bubble {
-	padding-bottom: 36.5%;
+	padding-bottom: 37.5%;
 }
 
 .bubble h2 {
-	font-size: 22px;
-	padding-top: 38%;
+	font-size: 26px;
+	padding-top: 39%;
 }
 
-a .bubble:hover {
+.bubble:hover {
 	margin-top: 0px;
-	box-shadow: none;
 }
 
 /*Circle containers*/
 
 .container-1 {
-	left: 8%;
+	left: 31%;
 	top: 188px;
 }
 
 .container-2 {
-	left: 32%;
-	top: 290px;
+	left: 49%;
+	top: 309px;
 }
 
 .container-3 {
-	left: 17%;
-	top: 410px;
+	left: 27%;
+	top: 423px;
 }
 
 .container-4 {
-	left: 57%;
-	top: 419px;
+	left: 61%;
+	top: 439px;
 }
 
+.container-5 {
+	left: 19%;
+	top: 556px;
+}
 
 .container-7 {
-	top: 533px;
-	left: 8%;
+	left: 7%;
+	top: 643px;
 	z-index: 7;
 }
 
 .container-8 {
 	left: 9%;
-	top: -225px;
+	top: -214px;;
 }
 .container-9 {
 	left: 25%;
@@ -96,22 +94,22 @@ a .bubble:hover {
 	top: -60px;
 }
  
-.container-5,
 .container-6,
 .container-11 {
 	display: none;
 }
 
 .circle-7 {
-	background: url("../images/smith.png") center center no-repeat;
+	background: white url("../../images/smith.png") center center no-repeat;
 }
 
+.circle-5,
 .circle-8,
 .circle-9,
 .circle-10,
 .circle-4,
 .circle-7 {
-	padding-bottom: 87%;
+	padding-bottom: 90%;
 }
 
 
@@ -121,29 +119,34 @@ a .bubble:hover {
 	margin: auto;
 	max-width: 300px;
 	text-align: right;
-	top: 0;
-	width: 80%;
+	top: 100px;
+	width: 100%;
 }
 
 .work-examples {
 	left: 15%;
-	height: 80%;
-	top: 200px;
-	width: 90%;
+	height: 400px;
+	margin-right: 0;
+	top: 220px;
+	width: 80%;
 }
 
 .up-down-arrows {
 	top: 650px;
-	left: 5%;
+	left: 23%;
 	height: 60%;
 	text-align: right;
-	width: 90%;
+	width: 77%;
 }
 
 .mid-bubbles {
-	height: 40%;
-	left: -30px;
-	top: -390px;
+	height: 5%;
+	left:-30px;
+	top: -370px;
+	width: 90%;
+}
+section {
+	margin-right: 0;
 }
 
 .info ul {
@@ -152,6 +155,7 @@ a .bubble:hover {
 	margin-right: 0;
 
 }
+
 table {
 	width: 110%;
 }
@@ -163,11 +167,11 @@ table {
 }
 
 .down-arrow {
-	top: 269px;
+	top: 357px;
 }
 
 .up-arrow {
-	top: -43px;
+	top: 64px;
 }
 .work-examples .up-arrow {
 	top: -40px;
@@ -178,6 +182,24 @@ table {
 a h2:hover {
 	color: #ccc;
 }
+
+.circle-8,
+.circle-7,
+.circle-4 {
+	padding-bottom: 87%;
+}
+
+
+a .bubble:hover {
+	margin-top: 0;
+	box-shadow: none;
+}
+
+
+
+
+
+
 
 
 
